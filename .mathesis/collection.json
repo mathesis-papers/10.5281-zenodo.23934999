@@ -1,7 +1,7 @@
 {
   "git_blobs": {
-    ".github/workflows/pages.yml": "8e586fcdf310e8d251ec98c5358a3b304705e151",
-    ".mathesis/generated.json": "f8fde83c3a7de99ed06fe5a3edb1055001051205",
+    ".github/workflows/pages.yml": "7879724db1358178aad7e9bed326a44be44f5a6a",
+    ".mathesis/generated.json": "cd0c6f4295eb23e19bfed8941e5c171b5d9b3dba",
     "CHANGELOG.md": "6ece4aa9ec72723d092d224c639b36f1998b9304",
     "CITATION.cff": "0a637718519603a9707e4275a6174679f68dbe8a",
     "CONTRIBUTING.md": "ea69168fc2cb506b57b00de1ef588aaf011aa3da",
@@ -21,7 +21,7 @@
     "site/index.html": "100814cc05eb79934d562da91955b928b40ea5e6",
     "site/mathesis-materials.json": "c31e9f1daa71efca32a08b67d9b3cfb48c78c1dc",
     "site/zh/index.html": "2c6654097cae57742526247f4dfabe2010c3121d",
-    "versions/v2/.mathesis/generated.json": "f8fde83c3a7de99ed06fe5a3edb1055001051205",
+    "versions/v2/.mathesis/generated.json": "cd0c6f4295eb23e19bfed8941e5c171b5d9b3dba",
     "versions/v2/CHANGELOG.md": "6ece4aa9ec72723d092d224c639b36f1998b9304",
     "versions/v2/CITATION.cff": "0a637718519603a9707e4275a6174679f68dbe8a",
     "versions/v2/CONTRIBUTING.md": "ea69168fc2cb506b57b00de1ef588aaf011aa3da",
@@ -40,8 +40,8 @@
   },
   "schema": "mathesis.paper-collection.v1",
   "sha256": {
-    ".github/workflows/pages.yml": "2b966ea9011cbd0f1b8606414cc845b37a1b147e2ad5e2670fcf4003634a7b05",
-    ".mathesis/generated.json": "7e26051db7490e4993f38b4e9f1f79f809f1478633d0d11c1c6fce28ad82ff6f",
+    ".github/workflows/pages.yml": "f15d983dcb8f324ffdedb50b05f7380e11fda8723d49b5c8f10ef0f414612372",
+    ".mathesis/generated.json": "0e09ef6c7fe402f8df9db1a1d645ab132d04384db00e1660d335355328279f80",
     "CHANGELOG.md": "b546e42ec09163c2307429b616d0396357d27dcc5942b001751f401012b1a47d",
     "CITATION.cff": "6e6d36b1cba7c90cd865ee4a7f0e31e50a285b9345146a35e02b12e30a52fbd3",
     "CONTRIBUTING.md": "fafd66e63160b2a88f433af56d2af2b0f7bf6ed2fd417d46b54446ce07c627ff",
@@ -61,7 +61,7 @@
     "site/index.html": "11e678711e551d19cc4719e12008ff2dc32671e8f55e14cfc23b027da69af30f",
     "site/mathesis-materials.json": "bf8dbf8bcd06a341720dcca1ce247f8d66c1f830da49560831992fa1c92852e0",
     "site/zh/index.html": "6b43902aa772e0f4e5afa6fd8ff1df68ee8cee024787387b8449539306e045f7",
-    "versions/v2/.mathesis/generated.json": "7e26051db7490e4993f38b4e9f1f79f809f1478633d0d11c1c6fce28ad82ff6f",
+    "versions/v2/.mathesis/generated.json": "0e09ef6c7fe402f8df9db1a1d645ab132d04384db00e1660d335355328279f80",
     "versions/v2/CHANGELOG.md": "b546e42ec09163c2307429b616d0396357d27dcc5942b001751f401012b1a47d",
     "versions/v2/CITATION.cff": "6e6d36b1cba7c90cd865ee4a7f0e31e50a285b9345146a35e02b12e30a52fbd3",
     "versions/v2/CONTRIBUTING.md": "fafd66e63160b2a88f433af56d2af2b0f7bf6ed2fd417d46b54446ce07c627ff",
