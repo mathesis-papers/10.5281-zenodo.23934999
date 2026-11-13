@@ -1,0 +1,397 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=26mm]{geometry}
+\usepackage{amsmath,amssymb,amsthm,booktabs,array}
+\usepackage[T1]{fontenc}
+\usepackage[colorlinks=true,allcolors=blue]{hyperref}
+\usepackage{microtype}
+\hypersetup{pdftitle={The section 2.9 conjecture of Lester, Haddadin and Gripaios (arXiv:2008.05206v6): three parity-odd variables are necessary},
+pdfauthor={Haobo Ma; Wenlin Zhang},pdfsubject={Minimal continuous invariant parity-odd event variables}}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newcommand{\RR}{\mathbb R}
+\newcommand{\SO}{\mathrm{SO}^{+}(1,3)}
+\newcommand{\PP}{\mathcal P}
+\newcommand{\all}{\Omega_{\mathrm{all}}}
+\newcommand{\coll}{\Omega_{\mathrm{coll}}}
+\title{The \S2.9 conjecture of Lester, Haddadin and Gripaios\break
+(arXiv:2008.05206v6):\break
+three parity-odd variables are necessary}
+\author{Haobo Ma\\\small ChronoAI Pte Ltd, Singapore
+\and Wenlin Zhang\\\small National University of Singapore\\
+\small ChronoAI Pte Ltd, Singapore}
+\date{3 November 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+We prove the conjecture in \S2.9 of Lester, Haddadin and Gripaios,
+\emph{Lorentz and permutation invariants of particles III}
+(arXiv:2008.05206v6), that their three-variable sets $S$ and $\hat S$
+are minimal for their respective four-particle event classes.
+Any two continuous, Lorentz- and pair-permutation-invariant, parity-odd
+real variables vanish together on a chiral collision event.
+The proof constructs a sphere consisting entirely of chiral events,
+on which parity acts antipodally up to the allowed symmetries, and
+applies the two-dimensional Borsuk--Ulam theorem.
+The same obstruction holds for strictly timelike, momentum-completable
+collisions with any number of additional interchangeable momenta,
+and for fully interchangeable collections of at least four momenta.
+\end{abstract}
+
+\section{The conjecture and event domains}
+
+Lester, Haddadin and Gripaios construct a sufficient triple $S$ for
+four-particle events with two interchangeable pairs, and a simpler
+triple $\hat S$ for the collision subclass \cite[\S5.1]{LHG}.
+Their conjecture in \S2.9 is that neither triple can be replaced by a
+one- or two-variable set retaining continuity, invariance, parity oddness
+and sufficiency. Here sufficiency means that the variables have no
+common zero on a chiral event. The missing ingredient is a lower bound
+that applies to \emph{every} admissible choice of variables, rather
+than only to subsets of the displayed triples.
+
+Write $x\cdot y=x^0y^0-x^1y^1-x^2y^2-x^3y^3$ and $x^2=x\cdot x$.
+Let $V_+=\{x\in\RR^4:x^0\geq0,\ x^2\geq0\}$, including the zero
+vector. An event is an ordered quadruple $e=(p,q,a,b)$, with domains
+\[
+ \all=V_+^4,\qquad
+ \coll=\{(p,q,a,b)\in\all:p^2q^2<(p\cdot q)^2\}.
+\]
+These are the source's $\Omega_{(pq)(ab)X}$ and
+$\Omega_{(pq)\rightarrow(ab)X}$, respectively
+\cite[\S3, definition of collision events and final two domain definitions]{LHG}.
+The domains allow variable masses and unobserved additional momenta;
+they do not impose $p+q=a+b$.
+
+The group $G=\SO\times S_2(pq)\times S_2(ab)$ acts by a common
+proper orthochronous Lorentz transformation and independent exchanges
+within the two pairs. Parity is $\PP x=(x^0,-x^1,-x^2,-x^3)$,
+applied to each momentum. An event is \emph{chiral} if $g e\ne\PP e$
+for every $g\in G$.
+For either domain $\Omega$, call $f:\Omega\to\RR$ admissible if it
+is continuous in the subspace topology, $G$-invariant, and satisfies
+$f(\PP e)=-f(e)$. Both domains are preserved by $G$ and parity.
+
+\begin{theorem}\label{thm:main}
+For $\Omega=\all$ or $\Omega=\coll$, and any two admissible variables
+$f_1,f_2$, there is a chiral event $e\in\Omega$ with
+$f_1(e)=f_2(e)=0$. Consequently a sufficient admissible set on either
+domain has at least three variables. The sets $S$ and $\hat S$ of
+\cite[\S5.1]{LHG} are therefore minimal on their respective domains.
+\end{theorem}
+
+\section{A sphere of chiral collision events}
+
+For $v=(s,t,d)\in S^2$, so $s^2+t^2+d^2=1$, put
+$A=\sqrt{4+t}$ and $B=\sqrt{4-t}$ and define
+\begin{equation}\label{eq:family}
+ \begin{aligned}
+ p&=(30,0,0,1),& q&=(20,0,0,-1),\\
+ a_v&=(10+s,A,0,d),& b_v&=(10-s,0,B,-d),\\
+ e_v&=(p,q,a_v,b_v).
+ \end{aligned}
+\end{equation}
+The map $v\mapsto e_v$ is continuous. Since $|s|,|t|,|d|\leq1$,
+we have $A,B\geq\sqrt3$, $a_v^0,b_v^0\geq9$, and each of their
+spatial squared norms is at most $6$. Thus all four momenta are
+strictly future timelike. Moreover
+\begin{equation}\label{eq:collision}
+ p^2=899,\qquad q^2=399,\qquad p\cdot q=601,\qquad
+ (p\cdot q)^2-p^2q^2=2500>0.
+\end{equation}
+In particular $e_v\in\coll$ for every $v$.
+
+\begin{lemma}\label{lem:chiral}
+Every event $e_v$ in \eqref{eq:family} is chiral.
+\end{lemma}
+\begin{proof}
+Suppose a Lorentz transformation $\Lambda\in\SO$ and the allowed
+exchanges carry $e_v$ to $\PP e_v$. An exchange of $p$ and $q$ is
+impossible: Lorentz transformations and parity preserve squared norms,
+but $p^2\ne q^2$. Hence the first pair is fixed and
+$\Lambda p=\PP p$, $\Lambda q=\PP q$.
+
+Set $H=\PP\Lambda$, viewing $\PP=\operatorname{diag}(1,-1,-1,-1)$
+as a matrix. Then $H$ preserves the Minkowski form, has determinant
+$-1$, and fixes $p$ and $q$. The two vectors span the time--longitudinal
+plane: $p+q=50e_0$ and $p-30e_0=e_3$. Therefore $H$ fixes $e_0,e_3$
+and preserves their Minkowski-orthogonal complement, the transverse
+Euclidean plane. Its restriction $U$ to that plane belongs to $O(2)$
+and has determinant $-1$.
+
+If the second pair is also fixed, $H a_v=a_v$ and $H b_v=b_v$.
+Their transverse components are $A e_1$ and $B e_2$, with $A,B>0$.
+Thus $U e_1=e_1$ and $U e_2=e_2$, contradicting $\det U=-1$.
+
+If the second pair is exchanged, $H a_v=b_v$. The fixed time
+coordinate gives $10+s=10-s$, hence $s=0$. The fixed longitudinal
+coordinate gives $d=-d$, hence $d=0$. Orthogonality of $U$ gives
+$A^2=B^2$, so $4+t=4-t$ and $t=0$. This contradicts
+$s^2+t^2+d^2=1$. All allowed exchanges have been exhausted.
+\end{proof}
+
+Let $R$ fix time and act on space by
+\[
+ (x,y,z)\longmapsto(-y,-x,-z).
+\]
+This spatial rotation has determinant $1$. Its time-fixing extension
+belongs to $\SO$. Direct substitution gives
+\begin{equation}\label{eq:antipodal}
+ e_{-v}= R\,(ab)\,\PP e_v.
+\end{equation}
+For example, applying $R$ to the parity image of $b_v$ gives
+$(10-s,B,0,-d)=a_{-v}$. The transformations of $p,q,a_v$ follow by
+direct substitution. Consequently every admissible $f$ satisfies
+\begin{equation}\label{eq:odd}
+ f(e_{-v})=f(R(ab)\PP e_v)=f(\PP e_v)=-f(e_v).
+\end{equation}
+
+\section{The topological obstruction and minimality}
+
+The Borsuk--Ulam theorem states that every continuous map
+$S^2\to\RR^2$ takes equal values at some antipodal pair
+\cite[Satz II, p.~178]{Borsuk}. For an odd map that value is zero.
+For completeness, the required odd-map form also has the following
+short proof. If an odd continuous map $F:S^2\to\RR^2$ had no zero,
+normalization would give an odd map $g:S^2\to S^1$. On the closed
+upper hemisphere, a disk, $g$ has a continuous real lift $\theta$ under
+$u\mapsto e^{iu}$. On the equator,
+$\theta(-z)-\theta(z)\in\pi+2\pi\mathbb Z$ by oddness.
+This difference is continuous on the connected equator, hence constant.
+Replacing $z$ by $-z$ negates it; the constant would be zero, impossible.
+
+Apply this fact to
+\[
+ F(v)=\bigl(f_1(e_v),f_2(e_v)\bigr).
+\]
+Continuity follows from continuity of the two variables and the family,
+and \eqref{eq:odd} makes $F$ odd. A zero supplies the desired event,
+which is chiral by Lemma~\ref{lem:chiral} and belongs to the collision
+domain by \eqref{eq:collision}. This proves the assertion for
+$\coll$, and also for $\all$ by restricting the two variables to
+$\coll$. A single variable is ruled out by taking $f_2=0$.
+The source's sufficient triples then give the matching upper bounds
+and prove Theorem~\ref{thm:main}.
+
+Scalar continuity obstructions have an earlier counterpart in chiral
+connectedness of Euclidean shapes, discussed by Fowler in the volume
+dated 2005 \cite{Fowler}. Wang's March 2021 two-component tetrahedral
+descriptor \cite{Wang} concerns Euclidean point configurations modulo
+translations and rotations, rather than Lorentzian four-momentum events.
+Lester's November 2021 \emph{Chiral Measurements} uses paths of chiral
+objects to obstruct a single continuous ideal scalar parity
+\cite[\S3.3, Lemma 3.8]{Lester}. The sphere above gives the stronger
+two-component obstruction for these event classes. It is the antipodal
+two-sphere, rather than a path alone, that forces the simultaneous zero
+of two arbitrary variables.
+
+\section{Consequences and coverage}
+
+\begin{corollary}\label{cor:strict}
+The two-variable obstruction remains valid on the subdomain of
+strictly future-timelike collision events. It also remains valid when
+an additional future-timelike unobserved momentum is required to
+complete momentum conservation.
+\end{corollary}
+\begin{proof}
+The family already lies in the strict timelike subdomain. In addition,
+\[
+ k_v=p+q-a_v-b_v=(30,-A,-B,0),\qquad k_v^2=900-(4+t)-(4-t)=892.
+\]
+Thus every event of the family has the requisite future-timelike
+completion. These subdomains are parity- and $G$-invariant, so the
+same continuous odd-map argument applies to variables on them.
+\end{proof}
+
+\begin{corollary}\label{cor:many}
+For every integer $n\geq2$, on the full forward-cone domain of an
+interchangeable pair and $n$ further interchangeable momenta, any
+two continuous $\SO\times S_2\times S_n$-invariant parity-odd real
+variables vanish together on a chiral event. The same holds on the
+collision subclass defined by the first pair.
+The conclusion also holds for strictly timelike collisions admitting
+a future-timelike unobserved momentum that completes conservation.
+\end{corollary}
+\begin{proof}
+Put $r=n-2$ and append $r$ identical momenta
+$c_j=((r+1)^{-1},0,0,0)$ to $e_v$. Their squared masses are at most
+$1$, whereas $75\leq a_v^2,b_v^2\leq121$. Thus any allowed
+Lorentz/parity mapping preserves $\{a_v,b_v\}$ and the collection of
+markers separately. Lemma~\ref{lem:chiral} rules out such a mapping.
+Parity and $R$ fix the markers, so \eqref{eq:antipodal} still holds.
+All momenta are strictly future timelike, and the unobserved completion is
+\[
+ k_{v,r}=\left(30-\frac{r}{r+1},-A,-B,0\right),\qquad
+ k_{v,r}^2=833+\frac{58r+59}{(r+1)^2}>833.
+\]
+Consequently the assertion also holds on the subdomain of strictly
+timelike collisions admitting a future-timelike unobserved completion.
+These domains are symmetry invariant, so Borsuk--Ulam applies as before.
+\end{proof}
+
+\newpage
+\begin{corollary}\label{cor:permutations}
+Let $N\geq4$ and let $H\leq S_N$ contain the transposition of the
+third and fourth slots. On $V_+^N$, any two continuous
+$\SO\times H$-invariant parity-odd real variables have a common zero
+at an $H$-chiral event. This holds even when all momenta are required
+to be strictly future timelike. In particular it holds for $H=S_N$,
+and for $S_m\times S_n$ with $m,n\geq2$ after relabeling the slots.
+\end{corollary}
+\begin{proof}
+Use $e_v$ with $r=N-4$ markers from Corollary~\ref{cor:many}.
+Under any Lorentz/permutation mapping, $p$ and $q$ are individually
+fixed by their unique squared masses $899$ and $399$; the pair
+$\{a_v,b_v\}$ is separated from the markers by squared mass.
+The chirality argument therefore works even for the full group $S_N$.
+The permitted transposition supplies \eqref{eq:antipodal}, giving the
+same odd two-sphere. For two blocks, place $p,q$ in the first block,
+$a,b$ in the second, and the remaining markers in either block.
+\end{proof}
+
+\begin{corollary}\label{cor:scalar}
+On either four-momentum domain, a continuous invariant parity-odd
+complex-valued scalar also vanishes on some chiral event. In particular,
+neither a real nor a complex continuous scalar can be sufficient.
+If continuity is dropped, one real variable is sufficient.
+\end{corollary}
+\begin{proof}
+Apply Theorem~\ref{thm:main} to the real and imaginary parts; a real
+scalar is the special case with zero imaginary part. Conversely, for
+either sufficient triple $(X_1,X_2,X_3)$, return its first nonzero
+component, or zero if all vanish. This is invariant and parity odd,
+since parity preserves the index of the first nonzero component.
+Its zero set is exactly the achiral set. This is the construction in
+\cite[\S6.1.1, (226)]{LHG}; Theorem~\ref{thm:main} proves that its
+restriction to the chiral sphere must be discontinuous.
+\end{proof}
+
+\begin{corollary}\label{cor:labelled}
+For four labeled forward-causal momenta, with no permutation symmetry,
+the single continuous variable $D(e)=\det[p\ q\ a\ b]$ is sufficient.
+For at most three forward-causal momenta every event is achiral.
+\end{corollary}
+\begin{proof}
+The determinant is Lorentz invariant and parity odd. If it is nonzero,
+no proper Lorentz transformation maps the labeled event to its parity
+image. If the span $W$ of the momenta has dimension at most three and
+contains a timelike vector, $W^\perp$ contains a spacelike vector $u$.
+Reflection in $u^\perp$ fixes $W$, has determinant $-1$, and is
+orthochronous because it fixes a timelike vector. Composing it with
+parity gives a proper orthochronous transformation taking the event to
+its parity image. If $W$ contains no timelike vector, all nonzero
+forward-causal momenta lie on a single null ray: the sum of two
+nonparallel future null vectors is timelike. A purely spatial vector
+orthogonal to that ray supplies the same reflection; if all momenta
+vanish choose any spatial axis. Thus $D=0$ implies achirality for four
+labeled momenta, and every event with at most three momenta is achiral.
+\end{proof}
+
+\clearpage
+\paragraph{Coverage of source questions.}
+The classifications below distinguish a proved lower bound from a
+determination of the minimum, and from independence of a displayed set.
+\smallskip
+
+\noindent\begin{tabular}{@{}>{\raggedright\arraybackslash}p{.40\linewidth}
+>{\raggedright\arraybackslash}p{.55\linewidth}@{}}
+\toprule
+Source item in arXiv:2008.05206v6 & Coverage\\
+\midrule
+\S2.9: minimality of $S$ and $\hat S$ & Proved: minimum three,
+Theorem~\ref{thm:main} and cited \S5.1 upper bounds.\\[3pt]
+\S6.1, first skeptic's scalar alternative & Proved impossible on these
+domains, even for a complex scalar (Corollary~\ref{cor:scalar}).\\[3pt]
+\S6.1.1, discontinuous compression & Prior proof cited: (226),
+reproduced in Corollary~\ref{cor:scalar}.\\[3pt]
+\S2.5, $S_2\times S_n$ extension & Proved: lower bound three for all
+$n\geq2$, also with timelike completion (Corollary~\ref{cor:many}).
+Construction of efficient variables and empirical performance: not covered.\\[3pt]
+\S5.2.8, $S_{19}$ minimality & Proved: lower bound three. Exact minimum,
+lower-degree alternatives and exploiting $C_{4B}$: not covered.\\[3pt]
+\S5.2.6, parameter-dependent irreducibility & Not covered: necessity
+of all nineteen variables for arbitrary nonzero $u_i$.\\[3pt]
+\S5.2.7, fixed-mass $S_9$ & Not covered: equal-mass incoming beams
+and three massless outgoing momenta.\\[3pt]
+\S5.4, $S_{28}$ & Proved: lower bound three. Exact minimum and
+independence of the twenty-eight displayed variables: not covered.\\[3pt]
+\S6.2, restriction $c\to0$ & Prior proof cited: restriction of the
+five-momentum formulas. No new claim about their independence.\\
+\bottomrule
+\end{tabular}
+
+\smallskip
+For the cross-referenced \emph{Chiral Measurements}, \S3.3,
+Lemma~3.8 gives a prior scalar path obstruction; the present two-variable
+obstruction strengthens it on the specified event domains.
+The existence speculation in its \S3.4 is realized here by the cited
+triples, but termination of the proposed general algorithm is not covered.
+Its \S2.8 continuity conjecture for general chiral measures is also
+not covered. Exact minima for the five-momentum classes and fixed-mass
+variants remain separate questions.
+
+\section*{Mathematical verification and reproducibility}
+
+The Lean declaration
+\nolinkurl{D5.S3.Geometry.Lorentz.ChiralEventParityMinimality.result}
+in the pinned
+\href{https://github.com/the-omega-institute/trureturing/blob/50f2a97bb5e704842f2c32c6095f68a0dc62c779/D5/S3/Geometry/Lorentz/ChiralEventParityMinimality.lean}{\texttt{ChiralEventParityMinimality.lean}}
+has the lower-bound statement of Theorem~\ref{thm:main} for
+\texttt{allEvents} and \texttt{collisionEvents}.
+Its \texttt{admissible}, \texttt{chiral} and \texttt{family}
+definitions are the definitions and family used here.
+The conclusion of exact minimality uses the cited sufficient triples.
+Corollaries~\ref{cor:strict}--\ref{cor:labelled} have the written proofs
+given above; their additional domains and permutation groups are not
+conclusions of that Lean declaration. The script \texttt{verify.py}
+checks the exact rotation, antipodal and collision identities, the
+algebraic contradiction in the exchange case, the marker/completion
+formulas and determinant identities. Its finite checks cover 31 rational
+sphere inputs and the marker families with $4\leq N\leq12$.
+The topological and reflection arguments establish the all-input results.
+
+\clearpage
+\section*{AI tools}
+In preparing this manuscript, the authors used AI tools (ChatGPT Pro, Codex
+and Claude) for literature search, computation, checking and formal
+verification in Lean. All proofs can be checked by hand, and the
+computations can be reproduced from the accompanying verification package.
+The authors take full responsibility for the content.
+
+\section*{License}
+This note is licensed under
+\href{https://creativecommons.org/licenses/by/4.0/}{Creative Commons
+Attribution 4.0 International (CC BY 4.0)}.
+
+\begin{thebibliography}{9}
+\raggedright
+\bibitem{LHG}
+C.~G.~Lester, W.~Haddadin and B.~Gripaios,
+\emph{Lorentz and permutation invariants of particles III:
+constraining nonstandard sources of parity violation},
+International Journal of Modern Physics A \textbf{37}(16) (2022), 2250093.
+\href{https://doi.org/10.1142/S0217751X22500932}{doi:10.1142/S0217751X22500932}.
+Posing text: \href{https://arxiv.org/abs/2008.05206v6}{arXiv:2008.05206v6},
+\S2.9; sufficient triples: \S5.1.
+
+\bibitem{Borsuk}
+K.~Borsuk, \emph{Drei S\"atze \"uber die $n$-dimensionale euklidische
+Sph\"are}, Fundamenta Mathematicae \textbf{20} (1933), 177--190.
+\href{https://doi.org/10.4064/fm-20-1-177-190}{doi:10.4064/fm-20-1-177-190}.
+
+\bibitem{Lester}
+C.~G.~Lester, \emph{Chiral Measurements} (2021),
+\href{https://arxiv.org/abs/2111.00623v4}{arXiv:2111.00623v4},
+\S3.3, Lemma 3.8.
+
+\bibitem{Fowler}
+P.~W.~Fowler, \emph{Quantification of chirality: attempting the impossible},
+Symmetry: Culture and Science \textbf{16}(4) (2005), 321--334.
+\href{https://journal-scs.symmetry.hu/wp-content/uploads/2014/01/fowler-05-4.pdf}{Full text}.
+
+\bibitem{Wang}
+H.~Wang, \emph{Two-component Pseudovectoral Chirality Function for
+Tetrahedra} (2021),
+\href{https://arxiv.org/abs/2103.12949v1}{arXiv:2103.12949v1}.
+\end{thebibliography}
+\end{document}

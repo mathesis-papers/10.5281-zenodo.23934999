@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this work, cite it."
+title: "The §2.9 conjecture of Lester, Haddadin and Gripaios (arXiv:2008.05206v6): three parity-odd variables are necessary"
+authors:
+  - name: "Haobo Ma"
+  - name: "Wenlin Zhang"
+date-released: "2026-11-05"
+version: "2"
+url: "https://mathesis-omega-research.apps.chrono-ai.fun/papers/chiral-event-parity-minimality?version=2"
+doi: "10.5281/zenodo.23935000"
+license: "CC-BY-4.0"

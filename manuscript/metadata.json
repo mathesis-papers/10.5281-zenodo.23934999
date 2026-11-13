@@ -1,0 +1,15 @@
+{
+  "id": "chiral-event-parity-minimality",
+  "revision": 2,
+  "problem_ids": ["lester-haddadin-gripaios-2022-chiral-event-parity-minimality"],
+  "topic": "Minimality of continuous invariant parity-odd variables for four-particle events with two interchangeable pairs",
+  "title": "The §2.9 conjecture of Lester, Haddadin and Gripaios (arXiv:2008.05206v6): three parity-odd variables are necessary",
+  "creators": [
+    {"name": "Haobo Ma", "affiliation": "ChronoAI Pte Ltd, Singapore"},
+    {"name": "Wenlin Zhang", "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore"}
+  ],
+  "abstract": "We prove the conjecture in §2.9 of Lester, Haddadin and Gripaios, Lorentz and permutation invariants of particles III (arXiv:2008.05206v6), that their three-variable sets S and S-hat are minimal for their respective four-particle event classes. Any two continuous, Lorentz- and pair-permutation-invariant, parity-odd real variables vanish together on a chiral collision event. The proof constructs a sphere consisting entirely of chiral events, on which parity acts antipodally up to the allowed symmetries, and applies the two-dimensional Borsuk-Ulam theorem. The same obstruction holds for strictly timelike, momentum-completable collisions with any number of additional interchangeable momenta, and for fully interchangeable collections of at least four momenta.",
+  "summary": "The exact minimum is three for both four-momentum domains. Written corollaries establish a lower bound of three for any permutation subgroup containing a transposition on at least four momenta, including fully interchangeable collections and two blocks of sizes at least two. Small timelike markers preserve momentum completion for all S2 × Sn collision classes. A continuous complex scalar also has a chiral zero; the labeled four-momentum case instead admits the single determinant variable. Five-momentum exact minima and fixed-mass variants are not determined.",
+  "license": "cc-by-4.0",
+  "evidence_url": "https://github.com/the-omega-institute/trureturing/blob/50f2a97bb5e704842f2c32c6095f68a0dc62c779/D5/S3/Geometry/Lorentz/ChiralEventParityMinimality.lean"
+}

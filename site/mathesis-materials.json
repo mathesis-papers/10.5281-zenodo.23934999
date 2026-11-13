@@ -1,0 +1,14 @@
+{
+  "schema": "mathesis.materials.v1",
+  "work": "chiral-event-parity-minimality",
+  "version": 2,
+  "repository_url": "https://github.com/mathesis-papers/6aec385b06f051afc69fcf80",
+  "site_url": "https://papers.trureturing.org/6aec385b06f051afc69fcf80/",
+  "doi": "10.5281/zenodo.23935000",
+  "reading": {
+    "en": "https://papers.trureturing.org/6aec385b06f051afc69fcf80/en/",
+    "zh": "https://papers.trureturing.org/6aec385b06f051afc69fcf80/zh/"
+  },
+  "slides": [],
+  "visualizations": []
+}

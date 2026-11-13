@@ -1,0 +1,62 @@
+{
+  "files": {
+    "pdf": {
+      "bytes": 80647,
+      "matches_public": null,
+      "path": "paper.pdf",
+      "public_sha256": null,
+      "sha256": "5f9f543e2f98291c2197122b3251a36803b1f7df1a0990dd861c8b00a86fe8f4"
+    },
+    "source": {
+      "bytes": 13900,
+      "matches_public": null,
+      "path": "manuscript/",
+      "public_sha256": null,
+      "sha256": "fe419ff0377c5d68996af0f957f3e5015754571831ca6b1a8ce9e99089ccd1a0"
+    }
+  },
+  "source_identity": "Mathesis public projection",
+  "work": {
+    "abstract_text": "We prove the conjecture in §2.9 of Lester, Haddadin and Gripaios, Lorentz and permutation invariants of particles III (arXiv:2008.05206v6), that their three-variable sets S and S-hat are minimal for their respective four-particle event classes. Any two continuous, Lorentz- and pair-permutation-invariant, parity-odd real variables vanish together on a chiral collision event. The proof constructs a sphere consisting entirely of chiral events, on which parity acts antipodally up to the allowed symmetries, and applies the two-dimensional Borsuk-Ulam theorem. The same obstruction holds for strictly timelike, momentum-completable collisions with any number of additional interchangeable momenta, and for fully interchangeable collections of at least four momenta.",
+    "authors": [
+      {
+        "affiliation": "ChronoAI Pte Ltd, Singapore",
+        "name": "Haobo Ma"
+      },
+      {
+        "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+        "name": "Wenlin Zhang"
+      }
+    ],
+    "concept_doi": "10.5281/zenodo.23934999",
+    "current_version": 2,
+    "doi": "10.5281/zenodo.23935000",
+    "lean_source": {
+      "revision": "50f2a97bb5e704842f2c32c6095f68a0dc62c779",
+      "url": "https://github.com/the-omega-institute/trureturing/blob/50f2a97bb5e704842f2c32c6095f68a0dc62c779/D5/S3/Geometry/Lorentz/ChiralEventParityMinimality.lean"
+    },
+    "license": "CC-BY-4.0",
+    "msc": [],
+    "pdf": {
+      "url": "/api/v1/collected-papers/chiral-event-parity-minimality/files/pdf?version=2"
+    },
+    "previous_version": null,
+    "publication": "public",
+    "published_on": "2026-11-05T08:03:39.983976858Z",
+    "record": "chiral-event-parity-minimality",
+    "repository_name": "6aec385b06f051afc69fcf80",
+    "source": {
+      "url": "/api/v1/collected-papers/chiral-event-parity-minimality/files/source?version=2"
+    },
+    "title": "The §2.9 conjecture of Lester, Haddadin and Gripaios (arXiv:2008.05206v6): three parity-odd variables are necessary",
+    "versions": [
+      {
+        "previous_version": null,
+        "published_on": "2026-11-05T08:03:39.983976858Z",
+        "revision": "2",
+        "version": 2
+      }
+    ],
+    "work": "chiral-event-parity-minimality"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "status": "pass",
+  "symbolic_identities": [
+    "proper Lorentz rotation",
+    "antipodal family identity",
+    "collision gap 2500",
+    "timelike completion square 892",
+    "exchange equations inconsistent with unit sphere",
+    "fixed transverse axes imply determinant one",
+    "arbitrary marker completion square exceeds 833",
+    "marker squared mass at most one",
+    "labeled determinant and its parity"
+  ],
+  "rational_sphere_inputs": 31,
+  "augmented_family_checks": 279,
+  "total_momentum_counts": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "scalar_compression_controls": 27,
+  "coverage": "Exact algebraic identities and finite timelike/antipodal controls; the all-input lower bounds and labeled classification follow from the written sphere, Borsuk-Ulam and reflection arguments."
+}
