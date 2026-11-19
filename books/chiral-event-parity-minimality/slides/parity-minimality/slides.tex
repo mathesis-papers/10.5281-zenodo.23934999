@@ -1,0 +1,113 @@
+\documentclass{beamer}
+\input{tbook-deck}
+\title{三变量的必要性：手性事件中的对跖障碍}
+\author{Wenlin Zhang}
+\institute{National University of Singapore 与 Chrono AI，新加坡}
+\date{2026 年 11 月 15 日}
+\begin{document}
+\begin{frame}
+  \titlepage
+  \note{先用左手和右手的比喻说明手性。今天只回答一个问题：为什么连续、对称、宇称奇的读数至少需要三个。}
+\end{frame}
+\begin{frame}{路线}
+  \tableofcontents
+  \note{路线是：先看问题，再构造球面，证明每一点手性，使用对跖恒等式和 Borsuk--Ulam，最后区分 Lean 下界与书面推论。}
+\end{frame}
+\section{问题与答案}
+\subsection{一个最小性问题}
+\begin{frame}{三个读数真的最少吗？}
+  \begin{itemize}
+    \item 事件是四个未来因果四动量 $(p,q,a,b)$。
+    \item $p,q$ 可交换，$a,b$ 可交换；允许共同的 保定向、保时向的洛伦兹变换。
+    \item 变量连续、对称不变，并在宇称下变号。
+  \end{itemize}
+  \begin{bookresult}{thm-main}
+    本文的完整书面结论：任意两项在某个手性事件上同时为零；结合原论文的充分三元组，精确最小数目为三。
+  \end{bookresult}
+  \note{“精确最小”有上下界两部分。书面定理把它们放在一起，稍后的页面会单独标出 Lean 覆盖的下界。}
+\end{frame}
+\section{球面障碍}
+\subsection{用三个坐标编码四动量}
+\begin{frame}{一整个由手性事件组成的球面}
+  \[
+  s^2+t^2+d^2=1,\qquad
+  A=\sqrt{4+t},\quad B=\sqrt{4-t}.
+  \]
+  \[
+  \begin{aligned}
+  p&=(30,0,0,1),&q&=(20,0,0,-1),\\
+  a_v&=(10+s,A,0,d),&b_v&=(10-s,0,B,-d).
+  \end{aligned}
+  \]
+  \begin{block}{碰撞检查}
+  $p^2=899$, $q^2=399$, $p\cdot q=601$, 因而
+  $(p\cdot q)^2-p^2q^2=2500>0$。
+  \end{block}
+  \note{球面的三个坐标分别进入能量、横向长度和纵向分量。平方根的自变量至少是三，因此整个族连续且严格未来类时。}
+\end{frame}
+\begin{frame}{为什么没有镜像配对？}
+  \begin{enumerate}
+    \item $p^2\ne q^2$，第一对不能交换。
+    \item 合成宇称得到行列式 $-1$ 的等距变换 $H$，它固定 $p,q$。
+    \item 横向平面上的二维块若固定 $a,b$ 的两条独立轴，就只能是恒等，行列式矛盾。
+    \item 若交换 $a,b$，坐标比较给出 $s=d=t=0$，违背单位球面。
+  \end{enumerate}
+  \begin{bookresult}{lem-family}
+    球面上的每个事件都是碰撞域中的手性事件。
+  \end{bookresult}
+  \note{这是 chirality 的完整分情况证明。第一对的不同平方质量排除一个分支，第二对的固定或交换排除另外两支。}
+\end{frame}
+\section{拓扑强迫零点}
+\subsection{对跖映射}
+\begin{frame}{宇称变成对跖点}
+  \[
+  R(x,y,z)=(-y,-x,-z),\qquad
+  e_{-v}=R\,(ab)\,\mathcal P e_v.
+  \]
+  \[
+  f(e_{-v})=-f(e_v),\qquad
+  F(v)=(f_1(e_v),f_2(e_v)).
+  \]
+  \begin{block}{Borsuk--Ulam}
+    连续奇映射 $F:S^2\to\mathbb R^2$ 必在某个点取零。
+  \end{block}
+  \note{允许的旋转和第二对交换把宇称像送到对跖点。两个读数因此组成一个连续奇映射。Borsuk--Ulam 迫使共同零点。}
+\end{frame}
+\begin{frame}{Lean 证明覆盖了哪一部分？}
+  \begin{bookresult}{thm-lower}
+    精确覆盖：在 $\Omega_{\mathrm{all}}$ 或 $\Omega_{\mathrm{coll}}$ 上，任意两个可容许变量在某个手性事件共同为零。
+  \end{bookresult}
+  \begin{block}{书面扩展}
+    严格类时补全、更多可交换动量、一般置换群、复变量边界和有标签行列式仍由本论文给出书面证明。
+  \end{block}
+  \note{Lean 使用总函数和 ContinuousOn 假设；把域上的函数任意延拓到域外后，两种表述一致。冻结声明没有包含三元组充分性或后续推论。}
+\end{frame}
+\section{边界与结论}
+\subsection{范围}
+\begin{frame}{边界情况}
+  \begin{columns}
+    \column{0.48\textwidth}
+      \begin{block}{至少需要三个}
+        严格未来类时且有补全动量：$k_v^2=892$。更多标记动量保留同一对跖障碍。
+      \end{block}
+    \column{0.48\textwidth}
+      \begin{block}{只需要一个}
+        四个有标签动量：$D=\det[p\ q\ a\ b]$。放弃连续性：取充分三元组的第一个非零分量。
+      \end{block}
+  \end{columns}
+  \note{这些边界显示假设的作用。交换对称性和连续性是三变量下界真正使用的条件。}
+\end{frame}
+\begin{frame}{一句话带走}
+  \centering
+  \Large
+  构造手性球面，\quad 让宇称成为对跖，\quad
+  用 Borsuk--Ulam 迫使两个读数同时归零。
+  \vfill
+  \small
+  下界由Lean 证明覆盖；精确最小三还需要原论文的充分三元组。
+  \note{结束时重述逻辑链：球面、手性、对跖、奇映射、共同零点。}
+\end{frame}
+\appendix
+\FormalVerification
+\end{document}
+

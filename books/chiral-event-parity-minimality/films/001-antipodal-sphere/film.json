@@ -1,0 +1,29 @@
+{
+  "duration": "1:20",
+  "id": "001-antipodal-sphere",
+  "lean": [
+    "D5/S3/Geometry/Lorentz/ChiralEventParityMinimality.result"
+  ],
+  "narration": {
+    "engine": "Kokoro-82M v1.0 (onnx)",
+    "language": "en",
+    "voice": "af_heart"
+  },
+  "outputs": {
+    "cover": "chiral-event-parity-minimality_001_cover.jpg",
+    "narrated_720p": "chiral-event-parity-minimality_001_720p_narrated.mp4"
+  },
+  "publication_basis": "pinned",
+  "released": "2026-11-15",
+  "resolution": "1280x720@30",
+  "style": "trureturing cyberpunk · deterministic canvas",
+  "subject": "https://github.com/the-omega-institute/trureturing",
+  "subtitles": [
+    "zh",
+    "en"
+  ],
+  "summary": "A focused explanation of the chiral-event lower bound: an explicit sphere of collision events becomes antipodal under parity and an allowed symmetry, so Borsuk–Ulam forces any two continuous readings to vanish together.",
+  "summary_zh": "聚焦解释手性事件的下界：显式碰撞球面在宇称与允许对称下变成对跖映射，因此 Borsuk–Ulam 迫使任意两个连续读数同时归零。",
+  "title": "The Antipodal Sphere",
+  "title_zh": "对跖球面：三个变量"
+}

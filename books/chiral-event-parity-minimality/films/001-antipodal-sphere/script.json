@@ -1,0 +1,126 @@
+{
+  "voice": "af_heart",
+  "speed": 0.94,
+  "say": {
+    "Borsuk–Ulam": "Borsuk Ulam",
+    "Lorentz": "Lorentz"
+  },
+  "music": {
+    "bpm": 82,
+    "progression": "a-minor"
+  },
+  "scenes": [
+    {
+      "id": "open",
+      "name": "QUESTION",
+      "lead": 1.0,
+      "tail": 0.8,
+      "lines": [
+        [
+          "Why do two continuous parity-odd readings fail on chiral events?",
+          "为什么两个连续的宇称奇读数会在手性事件上失效？"
+        ],
+        [
+          "The answer is a sphere, an antipodal symmetry, and three variables.",
+          "答案是一张球面、一个对跖对称，以及三个变量。"
+        ]
+      ]
+    },
+    {
+      "id": "family",
+      "name": "SPHERE",
+      "lead": 0.6,
+      "tail": 0.7,
+      "lines": [
+        [
+          "Let s, t, and d run over the unit sphere.",
+          "让 s、t、d 在单位球面上运动。"
+        ],
+        [
+          "The sphere becomes four momenta, with square roots of four plus t and four minus t.",
+          "球面变成四个动量，横向长度是四加 t 和四减 t 的平方根。"
+        ],
+        [
+          "Every point is a strict future-timelike collision event.",
+          "每一点都是严格未来类时的碰撞事件。"
+        ]
+      ]
+    },
+    {
+      "id": "chirality",
+      "name": "CHIRALITY",
+      "lead": 0.6,
+      "tail": 0.7,
+      "lines": [
+        [
+          "The unequal squared masses of p and q forbid exchanging the first pair.",
+          "p 和 q 的平方质量不同，所以第一对不能交换。"
+        ],
+        [
+          "Fixing or exchanging the second pair then contradicts the determinant or the unit-sphere equation.",
+          "固定或交换第二对，都会与行列式条件或单位球面方程矛盾。"
+        ],
+        [
+          "So the entire sphere is chiral.",
+          "因此整张球面都是手性的。"
+        ]
+      ]
+    },
+    {
+      "id": "antipode",
+      "name": "ANTIPODE",
+      "lead": 0.6,
+      "tail": 0.7,
+      "lines": [
+        [
+          "A proper rotation and the permitted exchange send parity to the antipodal point.",
+          "一个保持定向的旋转和允许的交换把宇称像送到对跖点。"
+        ],
+        [
+          "Every admissible reading therefore changes sign at opposite points.",
+          "所以每个可容许读数在相对点变号。"
+        ],
+        [
+          "Two readings form a continuous odd map from the sphere to the plane.",
+          "两个读数组成从球面到平面的连续奇映射。"
+        ]
+      ]
+    },
+    {
+      "id": "zero",
+      "name": "BORSUK",
+      "lead": 0.6,
+      "tail": 0.8,
+      "lines": [
+        [
+          "Borsuk–Ulam forces that odd map to hit zero.",
+          "Borsuk–Ulam 定理迫使这个奇映射取到零。"
+        ],
+        [
+          "The zero is a chiral event where both readings vanish.",
+          "这个零点就是两个读数同时消失的手性事件。"
+        ],
+        [
+          "Thus any sufficient continuous family needs at least three variables.",
+          "因此任何充分的连续变量族至少需要三个变量。"
+        ]
+      ]
+    },
+    {
+      "id": "close",
+      "name": "SCOPE",
+      "lead": 0.6,
+      "tail": 2.2,
+      "lines": [
+        [
+          "The Lean proof covers this lower bound on both event domains.",
+          "Lean 证明覆盖两个事件域上的这个下界。"
+        ],
+        [
+          "The exact minimum three also uses the sufficient triples from the original paper.",
+          "精确最小三还要使用原论文给出的充分三元组。"
+        ]
+      ]
+    }
+  ]
+}

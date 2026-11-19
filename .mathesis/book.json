@@ -1,0 +1,99 @@
+{
+  "book": "chiral-event-parity-minimality",
+  "version": 2,
+  "work": "chiral-event-parity-minimality",
+  "titles": {
+    "zh": "The §2.9 conjecture of Lester, Haddadin and Gripaios (arXiv:2008.05206v6): three parity-odd variables are necessary",
+    "en": "The §2.9 conjecture of Lester, Haddadin and Gripaios (arXiv:2008.05206v6): three parity-odd variables are necessary"
+  },
+  "stage": "complete",
+  "results": {
+    "thm-main": {
+      "claim": "collected:chiral-event-parity-minimality:2:s1",
+      "gids": [],
+      "comparison_verdict": "special case",
+      "compared_public_gid": "D5/S3/Geometry/Lorentz/ChiralEventParityMinimality.result",
+      "comparison_commit": "8a24ea4e79de962725aab9d9b49cc605fcc211d8",
+      "formalization_request": {
+        "label": "Exact minimum three for two interchangeable-pair domains",
+        "url": "https://github.com/the-omega-institute/trureturing-requests/issues/124"
+      }
+    },
+    "lem-family": {
+      "claim": "collected:chiral-event-parity-minimality:2:s2",
+      "gids": [],
+      "comparison_verdict": "none",
+      "compared_public_gid": null,
+      "comparison_commit": "8a24ea4e79de962725aab9d9b49cc605fcc211d8",
+      "formalization_request": {
+        "label": "Chiral-event extension: lem-family",
+        "url": "https://github.com/the-omega-institute/trureturing-requests/issues/124"
+      }
+    },
+    "cor-strict": {
+      "claim": "collected:chiral-event-parity-minimality:2:s3",
+      "gids": [],
+      "comparison_verdict": "none",
+      "compared_public_gid": null,
+      "comparison_commit": "8a24ea4e79de962725aab9d9b49cc605fcc211d8",
+      "formalization_request": {
+        "label": "Chiral-event extension: cor-strict",
+        "url": "https://github.com/the-omega-institute/trureturing-requests/issues/124"
+      }
+    },
+    "cor-many": {
+      "claim": "collected:chiral-event-parity-minimality:2:s4",
+      "gids": [],
+      "comparison_verdict": "none",
+      "compared_public_gid": null,
+      "comparison_commit": "8a24ea4e79de962725aab9d9b49cc605fcc211d8",
+      "formalization_request": {
+        "label": "Chiral-event extension: cor-many",
+        "url": "https://github.com/the-omega-institute/trureturing-requests/issues/124"
+      }
+    },
+    "cor-permutations": {
+      "claim": "collected:chiral-event-parity-minimality:2:s5",
+      "gids": [],
+      "comparison_verdict": "none",
+      "compared_public_gid": null,
+      "comparison_commit": "8a24ea4e79de962725aab9d9b49cc605fcc211d8",
+      "formalization_request": {
+        "label": "Chiral-event extension: cor-permutations",
+        "url": "https://github.com/the-omega-institute/trureturing-requests/issues/124"
+      }
+    },
+    "cor-scalar": {
+      "claim": "collected:chiral-event-parity-minimality:2:s6",
+      "gids": [],
+      "comparison_verdict": "none",
+      "compared_public_gid": null,
+      "comparison_commit": "8a24ea4e79de962725aab9d9b49cc605fcc211d8",
+      "formalization_request": {
+        "label": "Chiral-event extension: cor-scalar",
+        "url": "https://github.com/the-omega-institute/trureturing-requests/issues/124"
+      }
+    },
+    "cor-labelled": {
+      "claim": "collected:chiral-event-parity-minimality:2:s7",
+      "gids": [],
+      "comparison_verdict": "none",
+      "compared_public_gid": null,
+      "comparison_commit": "8a24ea4e79de962725aab9d9b49cc605fcc211d8",
+      "formalization_request": {
+        "label": "Chiral-event extension: cor-labelled",
+        "url": "https://github.com/the-omega-institute/trureturing-requests/issues/124"
+      }
+    },
+    "thm-lower": {
+      "claim": "collected:chiral-event-parity-minimality:2:s1",
+      "gids": [
+        "D5/S3/Geometry/Lorentz/ChiralEventParityMinimality.result"
+      ],
+      "comparison_verdict": "same",
+      "compared_public_gid": "D5/S3/Geometry/Lorentz/ChiralEventParityMinimality.result",
+      "comparison_commit": "8a24ea4e79de962725aab9d9b49cc605fcc211d8"
+    }
+  },
+  "pending_claims": []
+}

@@ -1,0 +1,14 @@
+kind = "academic"
+editions = ["zh", "en"]
+aspect = "4:3"
+structure_colour = "#0e2c8e"
+short_author = "Wenlin Zhang · Haobo Ma"
+short_title = "Chiral event parity"
+institution = "National University of Singapore and Chrono AI, Singapore"
+coauthors = "Haobo Ma (Chrono AI, Singapore)"
+date = "15 November 2026"
+
+[title]
+zh = "三变量的必要性：手性事件中的对跖障碍"
+en = "Why Three Variables Are Necessary: An Antipodal Obstruction for Chiral Events"
+

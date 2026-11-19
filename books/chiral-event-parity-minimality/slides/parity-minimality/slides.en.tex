@@ -1,0 +1,113 @@
+\documentclass{beamer}
+\input{tbook-deck}
+\title{Why Three Variables Are Necessary: An Antipodal Obstruction for Chiral Events}
+\author{Wenlin Zhang}
+\institute{National University of Singapore and Chrono AI, Singapore}
+\date{15 November 2026}
+\begin{document}
+\begin{frame}
+  \titlepage
+  \note{Begin with the left-hand/right-hand picture of chirality. The question is why continuous, symmetric, parity-odd readings need at least three components.}
+\end{frame}
+\begin{frame}{Outline}
+  \tableofcontents
+  \note{The route is: state the question, build a sphere, prove every point is chiral, use the antipodal identity and Borsuk--Ulam, then separate the Lean lower bound from written corollaries.}
+\end{frame}
+\section{Question}
+\subsection{A minimality question}
+\begin{frame}{Are three readings really necessary?}
+  \begin{itemize}
+    \item An event is four future-causal four-momenta $(p,q,a,b)$.
+    \item $p,q$ may be exchanged, and $a,b$ may be exchanged; a common proper orthochronous Lorentz transformation is allowed.
+    \item A variable is continuous, invariant under these symmetries, and odd under parity.
+  \end{itemize}
+  \begin{bookresult}{thm-main}
+    The complete written result: any two components vanish together on a chiral event; with the sufficient triples from the original paper, the exact minimum is three.
+  \end{bookresult}
+  \note{“Exact minimum” has two parts, a lower and an upper bound. The written theorem states both; a later slide isolates the Lean-covered lower bound.}
+\end{frame}
+\section{Sphere}
+\subsection{Encoding three parameters}
+\begin{frame}{A whole sphere of chiral events}
+  \[
+  s^2+t^2+d^2=1,\qquad
+  A=\sqrt{4+t},\quad B=\sqrt{4-t}.
+  \]
+  \[
+  \begin{aligned}
+  p&=(30,0,0,1),&q&=(20,0,0,-1),\\
+  a_v&=(10+s,A,0,d),&b_v&=(10-s,0,B,-d).
+  \end{aligned}
+  \]
+  \begin{block}{Collision check}
+  $p^2=899$, $q^2=399$, $p\cdot q=601$, so
+  $(p\cdot q)^2-p^2q^2=2500>0$.
+  \end{block}
+  \note{The three sphere coordinates enter the energies, transverse lengths, and longitudinal components. The square-root arguments are at least three, so the family is continuous and strictly future timelike.}
+\end{frame}
+\begin{frame}{Why no point is paired with its mirror}
+  \begin{enumerate}
+    \item $p^2\ne q^2$, so the first pair cannot be exchanged.
+    \item Composing with parity gives a determinant-minus-one isometry $H$ fixing $p,q$.
+    \item On the transverse plane, fixing the two independent axes of $a,b$ would force the identity, contradicting the determinant.
+    \item Exchanging $a,b$ forces $s=d=t=0$, contrary to the unit-sphere equation.
+  \end{enumerate}
+  \begin{bookresult}{lem-family}
+    Every point of the sphere is a chiral collision event.
+  \end{bookresult}
+  \note{This is the complete chirality case split. Unequal squared masses remove one branch; fixing or exchanging the second pair removes the other two.}
+\end{frame}
+\section{Topology}
+\subsection{The antipodal map}
+\begin{frame}{Parity becomes the antipodal map}
+  \[
+  R(x,y,z)=(-y,-x,-z),\qquad
+  e_{-v}=R\,(ab)\,\mathcal P e_v.
+  \]
+  \[
+  f(e_{-v})=-f(e_v),\qquad
+  F(v)=(f_1(e_v),f_2(e_v)).
+  \]
+  \begin{block}{Borsuk--Ulam}
+    A continuous odd map $F:S^2\to\mathbb R^2$ has a zero.
+  \end{block}
+  \note{The permitted rotation and the second-pair exchange turn the parity image into the antipode. Two readings therefore form a continuous odd map, and Borsuk--Ulam forces a common zero.}
+\end{frame}
+\begin{frame}{What exactly does Lean cover?}
+  \begin{bookresult}{thm-lower}
+    On $\Omega_{\mathrm{all}}$ or $\Omega_{\mathrm{coll}}$, every pair of admissible variables has a common zero at a chiral event.
+  \end{bookresult}
+  \begin{block}{Written extensions}
+    Strict-timelike completion, more interchangeable momenta, general permutation groups, complex boundaries, and the labeled determinant remain written proofs in this paper.
+  \end{block}
+  \note{Lean uses total functions with ContinuousOn hypotheses. Arbitrary extension off the domain makes the two formulations agree. The frozen declaration does not include triple sufficiency or the later corollaries.}
+\end{frame}
+\section{Scope}
+\subsection{Scope}
+\begin{frame}{Boundary cases}
+  \begin{columns}
+    \column{0.48\textwidth}
+      \begin{block}{At least three}
+        Strictly future-timelike with completion: $k_v^2=892$. Extra marker momenta preserve the same antipodal obstruction.
+      \end{block}
+    \column{0.48\textwidth}
+      \begin{block}{One can suffice}
+        Four labeled momenta: $D=\det[p\ q\ a\ b]$. Without continuity: use the first nonzero component of a sufficient triple.
+      \end{block}
+  \end{columns}
+  \note{These boundaries show what the hypotheses do. Exchange symmetry and continuity are the conditions used by the three-variable lower bound.}
+\end{frame}
+\begin{frame}{One sentence to take away}
+  \centering
+  \Large
+  Build a chiral sphere,\quad make parity antipodal,\quad
+  and use Borsuk--Ulam to force two readings to vanish together.
+  \vfill
+  \small
+  The lower bound is Lean-covered; exact minimum three also needs the original sufficient triples.
+  \note{End with the logical chain: sphere, chirality, antipodes, odd map, common zero.}
+\end{frame}
+\appendix
+\FormalVerification
+\end{document}
+

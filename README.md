@@ -30,3 +30,43 @@ Haobo Ma, Wenlin Zhang (2026). The §2.9 conjecture of Lester, Haddadin and Grip
 ## Contributions
 
 Original authors are listed above. Formalization contributors and attribution are retained in `formalization/nodes.json`; repository pull requests do not confer verification or credit. Submit formalization attempts through the Mathesis attempt path described in [CONTRIBUTING.md](CONTRIBUTING.md).
+
+<!-- Mathesis generated repository guide; refresh with paper.py front. -->
+
+## Reading and materials
+
+[Paper site](https://papers.trureturing.org/10.5281-zenodo.23934999/) · [Frozen PDF](paper.pdf) · [Citation](CITATION.cff)
+
+[中文阅读](https://papers.trureturing.org/10.5281-zenodo.23934999/chiral-event-parity-minimality/zh/) · [Read in English](https://papers.trureturing.org/10.5281-zenodo.23934999/chiral-event-parity-minimality/en/)
+
+[Slides](https://papers.trureturing.org/10.5281-zenodo.23934999/chiral-event-parity-minimality/slides/) ([sources](books/chiral-event-parity-minimality/slides/)) · [Videos](https://papers.trureturing.org/10.5281-zenodo.23934999/chiral-event-parity-minimality/films/) ([sources](books/chiral-event-parity-minimality/films/))
+
+These are publication routes; available built materials are inventoried in [mathesis-materials.json](https://papers.trureturing.org/10.5281-zenodo.23934999/mathesis-materials.json).
+
+## Book and formalization
+
+Catalog formalization status above is separate from the statement comparisons below. A nearby declaration does not verify the complete written result.
+
+| Book result | Comparison with formal base | Compared declaration |
+|---|---|---|
+| `thm-main` | special case | `D5/S3/Geometry/Lorentz/ChiralEventParityMinimality.result` |
+| `lem-family` | none | — |
+| `cor-strict` | none | — |
+| `cor-many` | none | — |
+| `cor-permutations` | none | — |
+| `cor-scalar` | none | — |
+| `cor-labelled` | none | — |
+| `thm-lower` | same | `D5/S3/Geometry/Lorentz/ChiralEventParityMinimality.result` |
+
+Book stage: **complete**; 0 pending claims. [Statement comparisons](.mathesis/REVIEW.md).
+
+## Repository map
+
+| Zone | Location |
+|---|---|
+| Paper record | `paper.json`, `CITATION.cff`, `paper.pdf`, `manuscript/`, `formalization/nodes.json`, `LICENSES/`, `.mathesis/` |
+| Content | `books/chiral-event-parity-minimality/`: Chinese/English text, figures, visualizations, videos, slides, assets |
+| Machinery | Upstream and layer managed paths; update with `tbook template update` |
+| Repository front | This README, changelog, contribution guide, licence, project/site/pin configuration, `template.d/` |
+
+See [the enforced layout](docs/layer-mathesis/LAYOUT.md). Preparation run records and built outputs stay outside the committed tree.
