@@ -2,14 +2,14 @@
   "schema": "trureturing-books.lock.v1",
   "repo": "the-omega-institute/trureturing",
   "branch": "dev",
-  "commit": "8a24ea4e79de962725aab9d9b49cc605fcc211d8",
-  "pinned_at": "2026-11-08T12:32:04Z",
+  "commit": "b05ceb497bd134559c3c0f84d925c1643f7c65cb",
+  "pinned_at": "2026-11-24T06:47:20Z",
   "declarations": {
     "D5/S3/Geometry/Lorentz/ChiralEventParityMinimality.result": {
       "module": "D5/S3/Geometry/Lorentz/ChiralEventParityMinimality",
       "name": "D5.S3.Geometry.Lorentz.ChiralEventParityMinimality.result",
       "kind": "theorem",
-      "statement_id": "sha256:4c85e79092bb1106501dc28e61c05bac50c6a0a9fcb95d55277a8811a3a42cc2",
+      "statement_id": "sha256:1a2abc3d9016558a9213e334c4d8285feff85f0f71d1a9013dc9b2741fca175c",
       "line": 575,
       "signature": "theorem result : claim"
     }
